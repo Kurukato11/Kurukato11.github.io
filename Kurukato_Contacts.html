@@ -27,18 +27,18 @@
                 <div class="contact-wrapper">
                     <div class="contact-form">
                         <h3>Send a message.</h3>
-                        <form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="ddb05a6e-f40b-4684-b25b-11522938ea02">
                             <div class="form-group">
-                                <input type="text" name="" placeholder="Your Name">
+                                <input type="text" name="Name" placeholder="Your Name" required>
                             </div>
                             <div class="form-group">
                             <div class="form-group">
-                                <input type="email" name="" placeholder="Your Email">
+                                <input type="email" name="Email" placeholder="Your Email" required>
                             </div>
-                            <textarea name="message" placeholder="Your Message"></textarea>
-                            </div>
-                            <button type="submit">Send</button>
+                            <textarea name="message" placeholder="Your Message" required></textarea>  
                         </div>
+                        <button type="submit">Send</button>
                         <div class="contact-info">
                             <h3>Contact Information</h3>
                             <p><i class='bx bx-phone'></i>097 0203 9239</p>
